@@ -1,0 +1,291 @@
+/* Standard syntax for supporting most browsers */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Be Vietnam Pro",sans-serif; 
+    scroll-behavior:smooth;
+}
+.wrapper{
+    height:100vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
+
+}
+
+.section-1{
+    height:800px;
+    width:100%;
+    display:flex;
+    
+    
+
+}
+.section-1-left{
+    background-color:#87A96B;
+    height:100%;
+    width:90%;
+    
+    
+
+}
+
+.section-1-top-heading{
+    display:flex;
+    flex-direction:column;
+    margin:30px 30px;
+    font-weight:bold;
+}
+.section-1-top-heading h3{
+    padding-bottom:4px;
+    font-family: "Lucida Handwriting", cursive;
+}
+.section-1-content{
+    display:flex;
+    align-items:center;
+    justify-content:center ;
+    flex-direction:column;
+    margin-top:110px;
+    
+    
+}
+.section-1-content p{
+    font-size:60px;
+    font-weight:600;
+    padding-bottom:30px;
+    
+    
+}
+.section-1-btn{
+    margin-top:30px;
+    background-color: white;
+   
+    color:#00563B;
+    padding:0.8rem 2.3rem;
+    box-shadow:5px 5px 7px 0px #0000003f;
+    font-size:18px;
+    cursor:pointer;
+    transition: all 0.5s;
+    font-weight:500;
+    border:solid 3px transparent;
+    position:relative;
+    animation: slideInFromLeft 2s ease-in-out ;
+    border-radius:10px;
+    
+}
+
+
+
+#btn:hover{
+    cursor:pointer;
+    background-color:#14a179;
+}
+.section-1-right{
+    position:relative;
+}
+
+.section-1-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation: slideInFromRight 2s ease-in-out ;
+    
+    
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRightToCenter {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.appointment-card{
+    top: 50%;
+    left: 50%;
+    scale:0;
+    background-color: white;
+    height:550px;
+    width:380px;
+    position:absolute;
+    z-index:1;
+    transform: translate(-50%, -50%);
+     border-radius:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out, left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    
+}
+.active{
+    scale:1;
+    opacity: 1;
+    animation: slideInFromRightToCenter 2s ease-in-out; 
+    pointer-events: auto;
+    
+    
+    
+}
+.hidden {
+    left: 100%;
+    opacity: 0;
+}
+
+.contactus-form{
+    margin-top:25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    z-index:-10;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+
+    width:100%;
+    margin:2rem 5rem;
+}
+.formfield-container{
+    width:100%;
+   
+}
+.formfield{
+    width:100%;
+    height:35px;;
+    padding:0 2rem;
+    font-size:15px;
+    
+    box-shadow:2px 2px 10px #1f1f1f;
+    font-weight:500;
+    border:none;
+
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.formfield-textarea{
+    width:100%;
+    height:80px;
+}
+#submit-btn{
+    margin-top:-20px;
+    font-size:1.4rem;
+    border:none;
+}
+#submit-btn:hover{
+    scale:0.9;
+
+}
+
+.btn{
+    background-color: orange;
+    width:100%;
+    color:white;
+    padding:0.8rem 2.3rem;
+    box-shadow:5px 5px 7px 0px #0000003f;
+    font-size:18px;
+    cursor:pointer;
+    transition: all 0.5s;
+    font-weight:500;
+    border:solid 3px transparent;
+    border-radius:5px;
+}
+.section-2{
+    display:flex;
+    margin-top:20px;
+    
+}
+.card-1{
+height:250px;
+width:400px;
+background-color: aliceblue;
+margin-left:20px;
+border-radius: 50%;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+
+
+}
+.card-1 img{
+    background-size:cover;
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    
+
+}
+.content{
+    margin-left:80px;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    
+}
+.heading{
+    display:flex;
+    color:#DBE7C9;
+    
+
+}
+.heading i{
+    font-size:23px;
+}
+.heading i:hover{
+color: #50623A;
+cursor:pointer;
+}
+.heading h1{
+    padding-left:10px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition:all 1.5s;
+}
+.heading h1:hover{
+    cursor:pointer;
+    font-size:18px;
+    color:#2b351f;
+
+    
+}
+
+    
+    
+    
+
+.sub-heading{
+    padding-top:10px;
+    color:#50623A;
+    padding-bottom:10px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+    
+    
